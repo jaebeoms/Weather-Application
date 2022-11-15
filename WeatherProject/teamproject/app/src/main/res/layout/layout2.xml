@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D1B2FF"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_bground"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←날씨"
+        android:id="@+id/btn"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="게임→"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/stepCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        android:max="100"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/white" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv"
+        />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Reset"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        />
+</RelativeLayout>

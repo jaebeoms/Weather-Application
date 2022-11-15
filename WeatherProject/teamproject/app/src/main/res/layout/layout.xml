@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_bground"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="만보기→"
+        android:id="@+id/btn"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seoul"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_area"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39.6&#186;C "
+        android:textSize="70dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/tv_temp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/iv_weather"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_umbrella"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        android:text="우산을 챙겨야 해요!"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/recyclerView"
+        />
+</FrameLayout>
